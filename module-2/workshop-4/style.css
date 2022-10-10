@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    font-family: arial;
+}
+
+.top td {
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #c9c9c9;
+    font-weight: bold;
+}
+
+.bottom td {
+    text-align: center;
+    background-color: #c9c9c9;
+}
+
+.blue td {
+    background-color: lightblue;
+}

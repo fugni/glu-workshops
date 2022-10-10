@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="flex">
+        <div class="content">
+            <form>
+                <fieldset>
+                    <!--Tekstvelden-->
+                    <legend><h2>Tekstvelden</h2></legend>
+                    <p><label for="voornaam">Voornaam:</label><input type="text" name="voornaam:"></p>
+                    <p><label for="achternaam">Achternaam:</label><input type="text" name="achternaam:"></p>
+                    <p><label for="password">Wachtwoord:</label><input type="password" name="pwd"></p>
+                </fieldset>
+                <fieldset>
+                    <!--Checkbox-->
+                    <legend><h2>Checkbox</h2></legend>
+                    <p><input type="checkbox" name="geslacht" value="man"> Man</p>
+                    <p><input type="checkbox" name="geslacht" value="vrouw"> Vrouw</p>
+                </fieldset>
+                <fieldset>
+                    <!--Radio Buttons-->
+                    <legend><h2>Radio Buttons</h2></legend>
+                    <p><input type="radio" name="vehicle" value="fiets">Ik heb een fiets</p>
+                    <p><input type="radio" name="vehicle" value="auto">Ik heb een auto</p>
+                </fieldset>
+                <fieldset>
+                    <!--Dropdownlist-->
+                    <legend><h2>Dropdownlist</h2></legend>
+                    <p>
+                        <select name="Balletdanseressen">
+                            <option value="Martha Graham">Martha Graham</option>
+                            <option value="Carlotta Grisi">Carlotta Grisi</option>
+                            <option value="Aggrippa Vaganova" selected="selected">Agrippina Vaganove</option>
+                            <option value="Natalie Portman">Natalie Portman</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <!--Textarea-->
+                    <legend><h2>Textarea</h2></legend>
+                    <p><textarea rows="7" cols="25" name="opmerkingen"></textarea></p>
+                </fieldset>
+                <fieldset>
+                    <!--Submit knop-->
+                    <legend><h2>Submit knop</h2></legend>
+                    <p><input type="submit" value="Verzenden"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div class="content">
+            <form>
+                <fieldset>
+                    <legend><h2>Bericht</h2></legend>
+                    <p>
+                        <input type="text" name="voornaam"placeholder="Voornaam *"  required>
+                        <input type="text" name="achternaam"placeholder="Achternaam *"  required>
+                        <input type="text" name="emailadres"placeholder="E-mailadres *"  required>
+                        <input type="text" name="website" placeholder="Website">
+                        <textarea rows="7" cols="44" name="bericht" placeholder="Bericht *" required></textarea>
+                        <input type="submit" value="Verstuur">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

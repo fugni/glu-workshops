@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+#header {
+    padding: 0.5vh;
+    background-color: #5fad56;
+    height: 19vh;
+}
+
+#content {
+    padding: 0.5vh;
+    background-color: #F2C14E;
+    height: 59vh;
+}
+
+#footer {
+    padding: 0.5vh;
+    background-color: #F78154;
+    height: 19vh;
+}
