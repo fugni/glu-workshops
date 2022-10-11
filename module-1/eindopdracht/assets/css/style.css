@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff);
+    background-attachment: fixed;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #972322;
+}
+
+#header img {
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    animation: rotate 0.6s linear infinite paused;
+}
+
+#header img:hover {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#header h1 {
+    padding-top: 30px;
+    color: #fff;
+}
+
+#content {
+    background-color: #9BA2FF;
+    color: #000;
+    padding: 50px;
+}
+
+#content h2 {
+    text-align: center;
+}
+
+#content div {
+padding-top: 20px;
+}
+
+#content #list ul {
+    padding-left: 15px;
+}
+
+#experimental {
+    background-color: #97EFE9;
+    height: 500px;
+    padding: 50px;
+}
+
+#experimental h2 {
+    text-align: center;
+}
+
+#footer {
+    background-color: #2A2E45;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#meowbutton {
+    background-image: url('/assets/images/kitten.jpg');
+    background-size: 100px;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+
+#fungle {
+    margin: 200px;
+    color: darkorchid;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: xx-large;
+}
