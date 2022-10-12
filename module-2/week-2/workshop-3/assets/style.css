@@ -1,0 +1,122 @@
+@font-face {
+    font-family: nssans;
+    src: url(nssans.woff2);
+  }
+
+body {
+    font-family: nssans;
+    color: darkblue;
+  }
+
+#sign {
+    background-color: black;
+    border: 2px solid black;
+    display: inline-block;
+    height: 340px;
+}
+
+#left {
+    background-color: darkblue;
+    height: 340px;
+    width: 140px;
+    float: left;
+}
+
+#left-square {
+    background-color: white;
+    height: 106px;
+    width: 106px;
+    margin-top: 30px;
+    margin-left: 15px;
+    float: left;
+}
+
+#left-tinier-square {
+    background-color: darkblue;
+    height: 25px;
+    width: 25px;
+    float: left;
+}
+
+#left-txt2 {
+    font-size: 60px;
+    clear: left;
+}
+
+#middle {
+    background-color: black;
+    width: 590px;
+    height: 340px;
+    display: inline-block;
+}
+
+#middle-square {
+    background-color: white;
+    width: 490px;
+    height: 150px;
+    margin-left: 45px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#middle-square b {
+    font-size: 50px;
+}
+
+#middle-top {
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 45px;
+}
+
+#middle-top-left {
+    background-color: white;
+    width: 250px;
+    height: 50px;
+    float: left;
+    font-size: 40px;
+}
+
+#middle-top-right {
+    background-color: white;
+    width: 250px;
+    height: 50px;
+    float: right;
+    font-size: 40px;
+}
+
+#middle-top-right img {
+    height: 30px;
+}
+
+#middle-bar {
+    background-color: darkblue;
+    width: 500px;
+    height: 35px;
+    margin-left: 45px;
+    border-top: 2px solid white;
+    color: white;
+    font-size: 25px;
+}
+
+#right {
+    background-color: white;
+    width: 245px;
+    height: 340px;
+    float: right;
+}
+
+#right-clock {
+    background-color: white;
+    width: 195px;
+    height: 195px;
+    margin: 20px;
+}
+
+#right-clock img {
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
