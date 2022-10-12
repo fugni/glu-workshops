@@ -38,6 +38,10 @@ body {
     float: left;
 }
 
+#left-txt1 {
+    padding-left: 30px;
+}
+
 #left-txt2 {
     font-size: 60px;
     clear: left;
@@ -92,12 +96,13 @@ body {
 
 #middle-bar {
     background-color: darkblue;
-    width: 500px;
+    width: 495px;
     height: 35px;
     margin-left: 45px;
     border-top: 2px solid white;
     color: white;
     font-size: 25px;
+    padding-left: 5px;
 }
 
 #right {
