@@ -2,13 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Coolblue Bestelformulier</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header></header>
     <div id="content">
-
+        <div id="form">
+            <div class="form-txt">
+                <h2>JE GEGEVENS<span class="orange-txt">.</span></h2>
+                <p>Wat moet er op de factuur staan?</p>
+            </div>
+            <form>
+                <p><label>Type bestelling</label><input type="radio" name="type-bestelling" value="particulier" id="particulier"><label for="particulier">Particulier</label><input type="radio" name="type-bestelling" value="zakelijk" id="zakelijk"><label for="zakelijk">Zakelijk</label></p>
+                <p><label>Aanhef</label><input type="radio" name="aanhef" value="dhr" id="dhr"><label for="dhr">Dhr.</label><input type="radio" name="aanhef" value="mevr" id="mevr"><label for="mevr">Mevr.</label></p>
+                <p><label for="voornaam">Naam</label><input type="text" name="voornaam" id="voornaam"placeholder="Voornaam"><input type="text" name="tussenvoegsel" placeholder="Tussenv."><input type="text" name="achternaam" placeholder="Achternaam"></p>
+                <p><label for="postcode">postcode</label><input type="text" name="postcode" id="postcode"placeholder="1234AB"></p>
+                <p><label for="huisnummer">Huisnummer</label><input type="text" name="huisnummer" id="huisnummer" placeholder="Nr."><input type="text" name="toevoeging" placeholder="Toev."></p>
+                <p><label>Land</label><span id="land-nederland">Nederland</span><span id="land-belgie">In België laten bezorgen</span></p>
+                <p><label>Afleveradres</label><input type="radio" name="afleveradres" value="bovenstaand-adres" id="bovenstaand-adres"><label for="bovenstaand-adres">Op bovenstaand adres bezorgen</label><input type="radio" name="afleveradres" value="ander-adres" id="ander-adres"><label for="ander-adres">Op ander adres bezorgen</label></p>
+                <p><label for="email">E-mailadres</label><input type="email" name="email" id="email"></p>
+                <p><label for="telefoonnummer">Telefoonnummer</label><input type="text" name="telefoonnummer" id="telefoonnummer"></p>
+                <p><label for="geboortedatum">Geboortedatum</label><input type="text" name="geboortedatum" id="geboortedatum" placeholder="dd-mm-jjjj"></p>
+                <p><label>Verzendwijze factuur</label><input type="radio" name="verzendwijze-factuur" value="factuur-email" id="factuur-email"><label for="factuur-email">Factuur per e-mail</label><input type="radio" name="verzendwijze-factuur" value="factuur-geprint" id="factuur-geprint"><label for="factuur-geprint">Factuur geprint bij de bestelling</label></p>
+                <p><label>Nieuwsbrief</label><input type="checkbox" name="nieuwsbrief" value="nieuwsbrief" id="nieuwsbrief"><label for="nieuwsbrief">Ja, ik wil de Coolblue-nieuwsbrief met <span class="orange-txt">€5,- cadeaubon</span> voor mijn volgende bestelling</label></p>
+                <p><label for="kleur-verpakking">Kleur verpakking</label><input type="color" name="kleur-verpakking" id="kleur-verpakking"></p>
+            </form>
+        </div>
+        <div id="account-form">
+            <div class="form-txt">
+                <h2>BEWAAR JE GEGEVENS<span class="orange-txt">.</span></h2>
+                <p>Handig voor de volgende keer.</p>
+            </div>
+            <form>
+                <p><label for="wachtwoord">Wachtwoord</label><input type="password" name="wachtwoord" id="wachtwoord"><br><span>Minimaal 6 karakters.<br>Verder doen we niet zo moeilijk.</span></p>
+                <p><label for="wachtwoord-bevestigen">Wachtwoord bevestigen</label><input type="password" name="wachtwoord-bevestigen" id="wachtwoord-bevestigen"></p>
+            </form>
+        </div>
     </div>
     <footer>
         <div id="footer-left">
@@ -17,7 +47,7 @@
                     <img src="assets/images/phone.png" alt="phone icon">
                 </div>
                 <div id="call-text">
-                    <h2>BEL 010 7988999<span class="orange-dot">.</span></h2>
+                    <h2>BEL 010 7988999<span class="orange-txt">.</span></h2>
                     <p>Voor acute service.</p>
                 </div>
             </div>
@@ -26,7 +56,7 @@
         </div>
         <div id="footer-right">
             <div id="service-text">
-                <h2>SERVICE<span class="orange-dot">.</span></h2>
+                <h2>SERVICE<span class="orange-txt">.</span></h2>
                 <p>Onderdeel van Coolblue.</p>
             </div>
             <ul>

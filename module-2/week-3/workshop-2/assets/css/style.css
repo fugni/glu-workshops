@@ -8,21 +8,39 @@ header {
     background-color: #0090e3;
 }
 
-#content {
-    height: 1000px;
+.form-txt {
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.form-txt h2 {
+    margin: 0;
+    color: #0d54ae;
+}
+
+.form-txt p {
+    margin: 0;
+    color: #1895e9;
+    font-size: large;
+}
+
+#land-nederland {
+    color: gray;
+}
+
+#land-belgie {
+    color: #1895e9;
 }
 
 footer {
-    height: 275px;
     background-color: #0090e3;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #footer-left {
     float: left;
-    padding-top: 15px;
 }
 
 #call-div {
@@ -30,13 +48,13 @@ footer {
 }
 
 #call-icon img {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-right: 10px;
     width: 40px;
 }
 
 #call-text {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 #call-text * {
@@ -65,18 +83,19 @@ footer {
 }
 
 #icon-bar {
-    height: 75px;
+    clear: both;
+    height: 60px;
     background-color: white;
     display: flex;
     justify-content: center
 }
 
 #icon-bar img {
-    height: 55px;
+    height: 40px;
     width: auto;
     padding: 10px;
 }
 
-.orange-dot {
+.orange-txt {
     color: #fe6700;
 }
