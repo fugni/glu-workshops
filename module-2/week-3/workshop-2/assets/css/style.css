@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    background-color: #0090e3;
+}
+
+#content {
+    height: 1000px;
+}
+
+footer {
+    height: 275px;
+    background-color: #0090e3;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-left {
+    float: left;
+    padding-top: 15px;
+}
+
+#call-div {
+    display: flex;
+}
+
+#call-icon img {
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 40px;
+}
+
+#call-text {
+    padding-top: 25px;
+}
+
+#call-text * {
+    margin: 0;
+}
+
+#footer-right {
+    float: right;
+}
+
+#service-text {
+    padding-top: 30px;
+}
+
+#service-text * {
+    margin: 0;
+}
+
+#footer-right ul {
+    list-style-image: url(/module-2/week-3/workshop-2/assets/images/checkmark.png);
+    padding-left: 20px;
+}
+
+#footer-right ul li {
+    padding-bottom: 10px;
+}
+
+#icon-bar {
+    height: 75px;
+    background-color: white;
+    display: flex;
+    justify-content: center
+}
+
+#icon-bar img {
+    height: 55px;
+    width: auto;
+    padding: 10px;
+}
+
+.orange-dot {
+    color: #fe6700;
+}
