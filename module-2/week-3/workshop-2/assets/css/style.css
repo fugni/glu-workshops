@@ -2,86 +2,156 @@ body {
     font-family: sans-serif;
     margin: 0;
 }
-
 header {
     height: 50px;
     background-color: #0090e3;
 }
-
+header img {
+    padding-left: 100px;
+    height: 50px;
+}
+#form-labels {
+    float: left;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#form-labels label.a {
+    height: 20px;
+    margin-top: 16px;
+}
+#form-labels label.b {
+    height: 22px;
+    margin-top: 16px;
+}
+#form-labels label.c {
+    height: 20px;
+    margin-top: 19.5px;
+}
+#form-inputs {
+    float: right;
+    width: 72vw;
+}
+#form-inputs input[type=text] {
+    border: 2px lightgray solid;
+}
+#form-inputs input[type=email] {
+    border: 2px lightgray solid;
+}
+#account-form {
+    clear: both;
+}
+#account-form-labels {
+    float: left;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#account-form-inputs {
+    float: right;
+    width: 72vw;
+}
+#account-form-labels label.d {
+    height: 22px;
+    margin-top: 16px;
+}
+#account-form-labels label.e {
+    height: 22px;
+    margin-top: 52px;
+    margin-bottom: 40px;
+}
+#account-form-inputs input[type=password] {
+    border: 2px lightgray solid;
+}
 .form-txt {
     padding-top: 20px;
-    padding-left: 100px;
+    padding-left: 180px;
 }
-
 .form-txt h2 {
     margin: 0;
     color: #0d54ae;
 }
-
 .form-txt p {
     margin: 0;
     color: #1895e9;
     font-size: large;
 }
-
 #land-nederland {
     color: gray;
 }
-
-#land-belgie {
+#land-belgie b {
+    font-weight: 900;
+}
+#land-belgie a {
+    text-decoration: none;
     color: #1895e9;
 }
-
+#wachtwoord-uitleg {
+    color: gray;
+}
+#verder-bar {
+    clear: both;
+    margin-left: 180px;
+    background-color: gainsboro;
+    height: 50px;
+    width: 50vw;
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+}
+#verder-button {
+    background-color: #00ba01;
+    color: white;
+    border-color: gainsboro;
+    border-radius: 5px;
+    width: 100px;
+    margin: 5px;
+}
+#verder-button:hover {
+    background-color: green;
+}
 footer {
+    margin-top: 80px;
     background-color: #0090e3;
     color: white;
     display: flex;
     justify-content: space-evenly;
 }
-
 #footer-left {
     float: left;
 }
-
 #call-div {
     display: flex;
 }
-
 #call-icon img {
     padding-top: 30px;
     padding-right: 10px;
     width: 40px;
 }
-
 #call-text {
     padding-top: 30px;
 }
-
 #call-text * {
     margin: 0;
 }
-
 #footer-right {
     float: right;
 }
-
 #service-text {
     padding-top: 30px;
 }
-
 #service-text * {
     margin: 0;
 }
-
 #footer-right ul {
     list-style-image: url(/module-2/week-3/workshop-2/assets/images/checkmark.png);
     padding-left: 20px;
 }
-
 #footer-right ul li {
     padding-bottom: 10px;
 }
-
 #icon-bar {
     clear: both;
     height: 60px;
@@ -89,13 +159,23 @@ footer {
     display: flex;
     justify-content: center
 }
-
 #icon-bar img {
     height: 40px;
     width: auto;
     padding: 10px;
 }
-
 .orange-txt {
     color: #fe6700;
+}
+.blue-question {
+    color: white;
+    background-color: #0090e3;
+    border: 1px solid #0090e3;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    border-radius: 50%;
+}
+.blue-question:hover {
+    background-color: #fe6700;
+    border-color: #fe6700;
 }
