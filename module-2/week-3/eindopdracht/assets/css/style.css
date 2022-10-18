@@ -17,9 +17,6 @@ header {
     margin: 5px;
     margin-right: 40px;
 }
-#header-links a {
-    color: #1895e9;
-}
 #header-links a.a {
     padding-right: 3px;
     border-right: 3px solid #000000;
@@ -37,4 +34,7 @@ header {
     height: 50px;
     border: 5px solid #000000;
     border-radius: 30%;
+}
+a {
+    color: #1895e9;
 }
