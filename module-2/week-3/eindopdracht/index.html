@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Webshop</title>
-</head>
-<body>
-    <header>
-        <div id="header-language">
-            <label for="language-picker-select">Uw taal:</label>
-            <select name="language-picker-select" id="language-picker-select">
-                <option lang="nl" value="nederlands" selected>Nederlands</option>
-                <option lang="en" value="english">English</option>
-                <option lang="fr" value="francais">Français</option>
-                <option lang="de" value="deutsch">Deutsch</option>
-                <option lang="it" value="italiano">Italiano</option>
-            </select>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Webshop</title>
+    </head>
+    <body>
+        <div id="header">
+            <div id="header-language">
+                <label for="language-picker-select">Uw taal:</label>
+                <select name="language-picker-select" id="language-picker-select">
+                    <option lang="nl" value="nederlands" selected>Nederlands</option>
+                    <option lang="en" value="english">English</option>
+                    <option lang="fr" value="francais">Français</option>
+                    <option lang="de" value="deutsch">Deutsch</option>
+                    <option lang="it" value="italiano">Italiano</option>
+                </select>
+            </div>
+            <div id="header-links">
+                <a class="a" href="?mijn-account">Mijn account</a>
+                <a class="a" href="?afrekenen">Afrekenen</a>
+                <a href="?inloggen">Inloggen</a>
+            </div>
         </div>
-        <div id="header-links">
-            <a class="a" href="?mijn-account">Mijn account</a>
-            <a class="a" href="?afrekenen">Afrekenen</a>
-            <a href="?inloggen">Inloggen</a>
+        <div id="navbar">
+            <div id="navbar-logo">
+                <img src="assets/images/logo.png" alt="" />
+            </div>
+            <div id="navbar-nav">
+                <nav>
+                    <a href="?thing1">thing 1</a>
+                    <a href="?thing2">thing 2</a>
+                    <a id="nav-selected" href="?thing3">thing 3</a>
+                    <a href="?thing4">thing 4</a>
+                    <a href="?thing5">thing 5</a>
+                    <a href="?thing6">thing 6</a>
+                </nav>
+            </div>
+            <div id="navbar-buttons">
+                <a href="?search">Search</a>
+                <a href="?vergelijk">Vergelijk</a>
+                <a href="?winkelwagen">Winkelwagen</a>
+                <span>(2)</span>
+            </div>
         </div>
-    </header>
-    <div id="navbar">
-        <div id="navbar-logo">
-            <img src="assets/images/logo.png" alt="">
+        <div id="content"></div>
+        <div id="footer">
+            <div id="footer-payment">
+                <h2>Veilig betalen</h2>
+                <p>Betaal in alle veiligheid<br>met onze partners</p>
+                <div>
+                    <a href="https://www.ideal.nl/" target="_blank"><img src="assets/images/ideal.png" alt="ideal logo"></a>
+                    <a href="https://www.mastercard.nl/" target="_blank"><img src="assets/images/mastercard.png" alt="mastercard logo"></a><br>
+                    <a href="https://www.paypal.com/" target="_blank"><img src="assets/images/paypal.png" alt="paypal logo"></a>
+                </div>
+            </div>
+            <div id="footer-delivery">
+                <h2>Leveringskosten</h2>
+                <p><a href="?transport-tarieven">Transport tarieven</a></p>
+            </div>
+            <div id="footer-service">
+                <h2>Klantenservice</h2>
+            </div>
+            <div id="footer-about-us">
+                <h2>Over ons</h2>
+            </div>
         </div>
-        <div id="navbar-nav">
-            <nav>
-                <a href="?home">Home</a>
-                <a href="?muurdecoratie">Muurdecoratie</a>
-                <a href="?doosjes">Doosjes</a>
-                <a href="?opbergers">Opbergers</a>
-                <a href="?stools">Stools</a>
-                <a href="?gadgets">Gadgets</a>
-            </nav>
+        <div id="credit">
+            <p><b>Webshop door fungi</b></p>
         </div>
-        <div id="navbar-buttons">
-            <a href="?search">Search</a>
-            <a href="?vergelijk">Vergelijk</a>
-            <a href="?winkelwagen">Winkelwagen</a>
-            <span>(2)</span>
-        </div>
-    </div>
-    <div id="content"></div>
-    <footer></footer>
-</body>
+    </body>
 </html>
