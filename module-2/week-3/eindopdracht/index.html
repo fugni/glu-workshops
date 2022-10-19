@@ -29,7 +29,7 @@
             </div>
             <div id="navbar-nav">
                 <nav>
-                    <a href="?thing1">thing 1</a>
+                    <a href="?home">Home</a>
                     <a href="?thing2">thing 2</a>
                     <a id="nav-selected" href="?thing3">thing 3</a>
                     <a href="?thing4">thing 4</a>
@@ -40,11 +40,53 @@
             <div id="navbar-buttons">
                 <a href="?search">Search</a>
                 <a href="?vergelijk">Vergelijk</a>
-                <a href="?winkelwagen">Winkelwagen</a>
-                <span>(2)</span>
+                <a href="?winkelwagen">Winkelwagen <span>(3)</span></a>
             </div>
         </div>
-        <div id="content"></div>
+        <div id="content">
+            <div id="url-location">
+                <p><a href="?home">Home</a> <span class="very-bold">></span> thing 3</p>
+            </div>
+            <div id="sidebar">
+                <div class="sidebar-box">
+                    <h3>this sure is a thing</h3>
+                    <ul>
+                        <a href="?subcategorie-1"><li>Subcategorie 1</li></a>
+                        <a href="?subcategorie-2"><li>Subcategorie 2</li></a>
+                        <a href="?subcategorie-3"><li>Subcategorie 3</li></a>
+                    </ul>
+                </div>
+                <div class="sidebar-box a">
+                    <h3>Uw selectie verfijnen</h3>
+                    <p><b>Materiaal</b></p>
+                    <ul>
+                        <a href="?hout"><li>Hout (14)</li></a>
+                        <a href="?plastic"><li>Plastic (12)</li></a>
+                        <a href="?metaal"><li>Metaal (11)</li></a>
+                        <a href="?rubber"><li>Rubber (9)</li></a>
+                    </ul>
+                    <div id="more-div">
+                        <span id="selectie-more"><a href="?meer">more...</a></span>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h3>Prijs</h2>
+                    <div id="price-slider">
+                        <div id="price-slider-left"></div>
+                        <div id="price-slider-middle"></div>
+                        <div id="price-slider-right"></div>
+                    </div>
+                    <div id="price-slider-tag">
+                        <p>€0,00</p>
+                        <p>€75,00</p>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h3>Recent bekeken</h3>
+                </div>
+            </div>
+            <div id="products"></div>
+        </div>
         <div id="footer">
             <div id="footer-payment">
                 <h2>Veilig betalen</h2>
@@ -61,9 +103,21 @@
             </div>
             <div id="footer-service">
                 <h2>Klantenservice</h2>
+                <ul>
+                    <li><a href="?wachtwoord-vergeten">Wachtwoord vergeten</a></li>
+                    <li><a href="?veilige-betaling">Veilige betaling</a></li>
+                    <li><a href="?levering">Levering</a></li>
+                    <li><a href="?annuleren">Annuleren, retourneren en ruilen</a></li>
+                </ul>
             </div>
             <div id="footer-about-us">
                 <h2>Over ons</h2>
+                <ul>
+                    <li><a href="?over-ons">Over ons</a></li>
+                    <li><a href="?contactinformatie">Contactinformatie</a></li>
+                    <li><a href="?algemene-voorwaarden">Algemene voorwaarden</a></li>
+                    <li><a href="?privacy-beleid">Privacy beleid</a></li>
+                </ul>
             </div>
         </div>
         <div id="credit">

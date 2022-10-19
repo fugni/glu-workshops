@@ -1,5 +1,13 @@
+@counter-style pointer {
+    system: cyclic;
+    symbols: ">";
+    suffix: " ";
+}
 body {
     font-family: sans-serif;
+}
+a {
+    color: #fe6700;
 }
 #header {
     border: 3px solid #000000;
@@ -16,9 +24,6 @@ body {
 #header-links {
     margin: 10px;
     margin-right: 40px;
-}
-#header-links a {
-    color: #1895e9;
 }
 #header-links a.a {
     padding-right: 5px;
@@ -51,15 +56,15 @@ body {
 }
 #nav-selected {
     border: 2px solid #d3d3d3;
-    border-top: 10px solid #1895e9;
-    background-color: #dff2ff;
+    border-top: 10px solid #fe6700;
+    background-color: #ffd0b1;
 }
 #navbar-buttons {
     margin: 30px;
     margin-top: 40px;
 }
 #navbar-buttons a {
-    background-color: #1895e9;
+    background-color: #fe6700;
     color: #ffffff;
     border: 2px solid #000000;
     text-decoration: none;
@@ -67,7 +72,84 @@ body {
     box-shadow: 2px 2px #000000;
 }
 #content {
-    height: 500px;
+    border: 3px solid #000000;
+    border-top: 0px;
+}
+#url-location {
+    padding: 20px;
+}
+#url-location p {
+    margin: 0;
+}
+#sidebar {
+    float: left;
+}
+.sidebar-box {
+    margin: 20px;
+    border: 2px solid #000000;
+    border-top: 10px solid #fe6700;
+    width: 20vw;
+    padding-bottom: 20px;
+}
+.sidebar-box.a {
+    padding-bottom: 0px;
+}
+.sidebar-box h3 {
+    margin: 20px;
+    border-bottom: 3px solid #000000;
+}
+.sidebar-box p {
+    margin-left: 20px;
+}
+.sidebar-box ul {
+    list-style-type: pointer;
+}
+.sidebar-box ul a {
+    color: #000000;
+    text-decoration: none;
+}
+#more-div {
+    display: flex;
+    justify-content: end;
+}
+#selectie-more {
+    color: #fe6700;
+    text-decoration: underline;
+    margin: 5px;
+}
+#price-slider {
+    margin: 20px;
+    display: flex;
+    margin-bottom: 0;
+}
+#price-slider-left {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+}
+#price-slider-right {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+}
+#price-slider-middle {
+    margin-top: 7.5px;
+    width: 90%;
+    height: 6px;
+    background-color: gray;
+    border: 4px solid #000000;
+    border-left: 0;
+    border-right: 0;
+}
+#price-slider-tag {
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#products {
+    float: right;
 }
 #footer {
     border: 3px solid #000000;
@@ -76,6 +158,7 @@ body {
     clear: both;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 #footer h2 {
     text-transform: uppercase;
@@ -96,4 +179,7 @@ body {
 }
 #credit p {
     margin: 10px;
+}
+.very-bold {
+    font-weight: 900;
 }
