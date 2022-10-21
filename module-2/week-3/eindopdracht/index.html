@@ -24,17 +24,16 @@
             </div>
         </div>
         <div id="navbar">
-            <div id="navbar-logo">
-                <img src="assets/images/logo.png" alt="" />
+            <div id="navbar-name">
+                <h1>Fruitmand NFT's</h1>
             </div>
             <div id="navbar-nav">
                 <nav>
                     <a href="?home">Home</a>
-                    <a href="?thing2">thing 2</a>
-                    <a id="nav-selected" href="?thing3">thing 3</a>
-                    <a href="?thing4">thing 4</a>
-                    <a href="?thing5">thing 5</a>
-                    <a href="?thing6">thing 6</a>
+                    <a href="?mango">Mango NFT's</a>
+                    <a id="nav-selected" href="?aardbei">Aardbei NFT's</a>
+                    <a href="?appel">Appel NFT's</a>
+                    <a href="?peer">Peer NFT's</a>
                 </nav>
             </div>
             <div id="navbar-buttons">
@@ -45,25 +44,27 @@
         </div>
         <div id="content">
             <div id="url-location">
-                <p><a href="?home">Home</a> <span class="very-bold">></span> thing 3</p>
+                <p><a href="?home">Home</a> <span class="very-bold">></span> Aardbei NFT's</p>
             </div>
             <div id="sidebar">
                 <div class="sidebar-box">
-                    <h3>this sure is a thing</h3>
+                    <h3>NFT's</h3>
                     <ul>
-                        <a href="?subcategorie-1"><li>Subcategorie 1</li></a>
-                        <a href="?subcategorie-2"><li>Subcategorie 2</li></a>
-                        <a href="?subcategorie-3"><li>Subcategorie 3</li></a>
+                        <a href="?mango"><li>Mango NFT's</li></a>
+                        <a href="?aardbei" id="sidebar-selected"><li>Aardbei NFT's</li></a>
+                        <a href="?appel"><li>Appel NFT's</li></a>
+                        <a href="?peer"><li>Peer NFT's</li></a>
                     </ul>
                 </div>
                 <div class="sidebar-box a">
                     <h3>Uw selectie verfijnen</h3>
-                    <p><b>Materiaal</b></p>
+                    <p><b>Modifier</b></p>
                     <ul>
-                        <a href="?hout"><li>Hout (14)</li></a>
-                        <a href="?plastic"><li>Plastic (12)</li></a>
-                        <a href="?metaal"><li>Metaal (11)</li></a>
-                        <a href="?rubber"><li>Rubber (9)</li></a>
+                        <a href="?normaal"><li>Normaal (11)</li></a>
+                        <a href="?omgedraaid"><li>Omgedraaid (2)</li></a>
+                        <a href="?naar-beneden"><li>Naar beneden (2)</li></a>
+                        <a href="?naar-links"><li>Naar links (3)</li></a>
+                        <a href="?wijd"><li>Wijd (3)</li></a>
                     </ul>
                     <div id="more-div">
                         <span id="selectie-more"><a href="?meer">more...</a></span>
@@ -78,14 +79,332 @@
                     </div>
                     <div id="price-slider-tag">
                         <p>€0,00</p>
-                        <p>€75,00</p>
+                        <p>€10.000,00</p>
                     </div>
                 </div>
                 <div class="sidebar-box">
                     <h3>Recent bekeken</h3>
                 </div>
             </div>
-            <div id="products"></div>
+            <div id="products">
+                <div id="products-top">
+                    <div id="products-top-top">
+                        <h2>Aardbei NFT's</h2>
+                        <div>
+                            <select name="sort-by" id="sort-by">
+                                <option value="name" selected>Sorteer op: Naam</option>
+                                <option value="price">Sorteer op: Prijs</option>
+                                <option value="mostsales">Sorteer op: Meest verkocht</option>
+                            </select>
+                            <select name="show" id="show">
+                                <option value="show9">Toon: 9 per pagina</option>
+                                <option value="show21" selected>Toon: 21 per pagina</option>
+                                <option value="show36">Toon: 36 per pagina</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>21 artikelen (van 99)</p>
+                </div>
+                <div id="products-middle">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #01</p>
+                                <p class="product-price">€3.141,59</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img a">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #02</p>
+                                <p class="product-price">€2.653,58</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #03</p>
+                                <p class="product-price">€9.793,23</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img b">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #04</p>
+                                <p class="product-price">€8.462,64</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img c">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #05</p>
+                                <p class="product-price">€3.383,27</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #06</p>
+                                <p class="product-price">€9.502,88</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img d">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #07</p>
+                                <p class="product-price">€4.197,16</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info a">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #08</p>
+                                <p class="product-price">€3.141,59</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #09</p>
+                                <p class="product-price">€9.399,37</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img a">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #10</p>
+                                <p class="product-price">€5.105,82</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #11</p>
+                                <p class="product-price">€974,94</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img c">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #12</p>
+                                <p class="product-price">€4.592,30</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #13</p>
+                                <p class="product-price">€7.816,40</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img d">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #14</p>
+                                <p class="product-price">€6.286,20</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #15</p>
+                                <p class="product-price">€8.998,62</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img a">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #16</p>
+                                <p class="product-price">€8.034,82</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info c">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #17</p>
+                                <p class="product-price">€5.342,11</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #18</p>
+                                <p class="product-price">€7.067,98</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img b">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #19</p>
+                                <p class="product-price">€2.148,08</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #20</p>
+                                <p class="product-price">€6.513,28</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-img d">
+                            <img src="assets/images/Aardbei-fruit.png" alt="aardbei">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-text">
+                                <p class="product-title">Aardbei NFT #21</p>
+                                <p class="product-price">€2.306,64</p>
+                            </div>
+                            <div class="product-icon">
+                                <img src="assets/images/cart-shopping-solid.svg" alt="shopping icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="products-bottom">
+                    <p>21 artikelen (van 99)</p>
+                </div>
+            </div>
         </div>
         <div id="footer">
             <div id="footer-payment">
