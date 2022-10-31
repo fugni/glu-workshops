@@ -44,8 +44,16 @@ a {
     border-bottom: 3px solid #000000;
 }
 
-#navbar-name {
+#navbar-title {
     padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#title a {
+    font-size: 36px;
+    color: #fe6700;
+    text-decoration: none;
 }
 
 #navbar-nav {
@@ -172,6 +180,18 @@ a {
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+#recent-product {
+    display: flex;
+}
+
+#recent-product:hover {
+    cursor: pointer;
+}
+
+#recent-product img {
+    height: 100px;
 }
 
 #products {
