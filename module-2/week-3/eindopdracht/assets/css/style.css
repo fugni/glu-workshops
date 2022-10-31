@@ -5,6 +5,8 @@
 }
 
 body {
+    background-image: url("20221030_124725.jpg");
+    background-size: 100px;
     font-family: sans-serif;
     margin: 0
 }
