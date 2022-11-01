@@ -56,6 +56,11 @@ a {
     font-size: 36px;
     color: #fe6700;
     text-decoration: none;
+    font-family: "Rubik";
+    padding-right: 5px;
+    border-bottom: 5px solid #fe6700;
+    border-right: 5px solid #fe6700;
+    box-shadow: 5px 5px #79addc;
 }
 
 #navbar-nav {
@@ -64,16 +69,17 @@ a {
 }
 
 #navbar-nav a {
-    color: #000000;
     font-size: 15px;
     text-decoration: none;
     padding: 5px;
+    font-family: "Rubik";
 }
 
 #nav-selected {
-    border: 2px solid #d3d3d3;
-    border-top: 10px solid #fe6700;
-    background-color: #ffd0b1;
+    background-color: #79addc;
+    color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px #000000;
 }
 
 #navbar-buttons {
@@ -88,6 +94,7 @@ a {
     text-decoration: none;
     padding: 5px;
     box-shadow: 2px 2px #000000;
+    font-family: "Rubik";
 }
 
 #url-location {
@@ -96,6 +103,10 @@ a {
 
 #url-location p {
     margin: 0;
+}
+
+#url-location a {
+    text-decoration: none;
 }
 
 #sidebar {
@@ -277,7 +288,7 @@ a {
 }
 
 .product-icon {
-    border: 3px solid #000000;
+    border: 3px solid #fe6700;
     border-radius: 20px;
     height: 50px;
     width: 50px;
@@ -291,6 +302,7 @@ a {
 
 .product-icon img {
     margin: 10px;
+    height: 30px;
 }
 
 #products-bottom p {
@@ -311,11 +323,16 @@ a {
 #footer h2 {
     text-transform: uppercase;
     color: #fe6700;
+    font-family: "Rubik";
 }
 
 #footer a {
     color: #000000;
     text-decoration: none;
+}
+
+#footer ul {
+    padding-left: 20px;
 }
 
 #footer-payment img {
