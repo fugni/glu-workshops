@@ -1,0 +1,19 @@
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.music-div {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-div audio {
+    width: 250px;
+}
+
+.music-div img {
+    height: 250px;
+    width: 250px;
+}
