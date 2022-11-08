@@ -1,39 +1,29 @@
-function toggleButtercupAudio() {
-    var buttercupAudio = document.getElementById('buttercup-audio');
-    if (buttercupAudio.paused)
-        buttercupAudio.play();
-    else
-        buttercupAudio.pause();
+function toggleAudio1() {
+    var audio1 = document.getElementById("buttercup-audio");
+    if (audio1.paused) audio1.play();
+    else audio1.pause();
 }
 
-function toggleSoftboyAudio() {
-    var softboyAudio = document.getElementById('soft-boy-audio');
-    if (softboyAudio.paused)
-        softboyAudio.play();
-    else
-        softboyAudio.pause();
+function toggleAudio2() {
+    var audio2 = document.getElementById("soft-boy-audio");
+    if (audio2.paused) audio2.play();
+    else audio2.pause();
 }
 
-function toggleVioletAudio() {
-    var violetAudio = document.getElementById('violet-audio');
-    if (violetAudio.paused)
-        violetAudio.play();
-    else
-        violetAudio.pause();
+function toggleAudio3() {
+    var audio3 = document.getElementById("violet-audio");
+    if (audio3.paused) audio3.play();
+    else audio3.pause();
 }
 
-function toggleSortingalgorithmsAudio() {
-    var sortingalgorithmsAudio = document.getElementById('sorting-algorithms-audio');
-    if (sortingalgorithmsAudio.paused)
-        sortingalgorithmsAudio.play();
-    else
-        sortingalgorithmsAudio.pause();
+function toggleAudio4() {
+    var audio4 = document.getElementById("sorting-algorithms-audio");
+    if (audio4.paused) audio4.play();
+    else audio4.pause();
 }
 
-function toggleLittledarkageAudio() {
-    var littledarkageAudio = document.getElementById('little-dark-audio');
-    if (littledarkageAudio.paused)
-        littledarkageAudio.play();
-    else
-        littledarkageAudio.pause();
+function toggleAudio5() {
+    var audio5 = document.getElementById("little-dark-age-audio");
+    if (audio5.paused) audio5.play();
+    else audio5.pause();
 }
