@@ -2,39 +2,30 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" async></script>
     <title>Spotify Web Player</title>
 </head>
 <body>
     <div id="flex">
         <div class="music-div">
-            <img src="assets/images/buttercup.jpg" alt="buttercup">
-            <audio controls>
-                <source src="assets/audio/buttercup.mp3">
-            </audio>
+            <img src="assets/images/buttercup.jpg" alt="buttercup" onclick="toggleButtercupAudio()">
+            <audio id="buttercup-audio" src="assets/audio/buttercup.mp3" controls preload="auto"></audio>
         </div>
         <div class="music-div">
-            <img src="assets/images/soft-boy.jpg" alt="soft boy">
-            <audio controls>
-                <source src="assets/audio/soft-boy.mp3">
-            </audio>
+            <img src="assets/images/soft-boy.jpg" alt="soft boy" onclick="toggleSoftboyAudio()">
+            <audio id="soft-boy-audio" src="assets/audio/soft-boy.mp3" controls preload="auto"></audio>
         </div>
         <div class="music-div">
-            <img src="assets/images/violet.jpg" alt="violet">
-            <audio controls>
-                <source src="assets/audio/violet.mp3">
-            </audio>
+            <img src="assets/images/violet.jpg" alt="violet" onclick="toggleVioletAudio()">
+            <audio id="violet-audio" src="assets/audio/violet.mp3" controls preload="auto"></audio>
         </div>
         <div class="music-div">
-            <img src="assets/images/sorting-algorithms.jpg" alt="sorting algorithms">
-            <audio controls>
-                <source src="assets/audio/sorting-algorithms.mp3">
-            </audio>
+            <img src="assets/images/sorting-algorithms.jpg" alt="sorting algorithms" onclick="toggleSortingalgorithmsAudio()">
+            <audio id="sorting-algorithms-audio" src="assets/audio/sorting-algorithms.mp3" controls preload="auto"></audio>
         </div>
         <div class="music-div">
-            <img src="assets/images/little-dark-age.png" alt="little dark age">
-            <audio controls>
-                <source src="assets/audio/little-dark-age.mp3">
-            </audio>
+            <img src="assets/images/little-dark-age.png" alt="little dark age" onclick="toggleLittledarkageAudio()">
+            <audio id="little-dark-age-audio" src="assets/audio/little-dark-age.mp3" controls preload="auto"></audio>
         </div>
     </div>
 </body>
