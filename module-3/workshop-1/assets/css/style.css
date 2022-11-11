@@ -1,70 +1,41 @@
-@keyframes background-pan {
-    from {
-        background-position: 0% center;
-    }
-
-    to {
-        background-position: -200% center;
-    }
-}
-
-body {
-    margin: 0;
-}
-
-.music-box {
+#carousel {
     display: flex;
     justify-content: center;
 }
 
-.music-div {
-    display: flex;
-    flex-direction: column;
-}
-
-.music-div audio {
-    width: 250px;
-}
-
-.music-div img {
+.carousel-item img {
     height: 250px;
     width: 250px;
     cursor: pointer;
 }
 
-.now-playing-box {
+.carousel-item img:active {
+    border: 5px solid black;
+}
+
+#buttons {
     display: flex;
     justify-content: center;
 }
 
-.now-playing {
-    width: 300px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: background-pan 10s linear infinite;
-    background: linear-gradient(to right, green, lawngreen, green);
-    background-size: 200%;
+#buttons h2 {
+    width: 350px;
+    text-align: center;
+    color: blueviolet;
 }
 
-.now-playing span {
-    color: white;
-    font-size: 40px;
-    margin: 0;
+#buttons button {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
 }
 
-.song-box {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.song-list {
+#song-list {
+    margin: 0px auto;
     width: 300px;
 }
 
-.song-item {
+.song-list-item {
     margin: 10px;
     display: flex;
     justify-content: space-between;

@@ -6,42 +6,26 @@
     <title>Spotify Web Player</title>
 </head>
 <body>
-    <div>
-        <div class="music-box">
-            <div class="music-div">
-                <img src="assets/images/buttercup.jpg" alt="buttercup" onclick="toggleAudio1()">
-                <audio id="buttercup-audio" class="audios" src="assets/audio/buttercup.mp3" preload="auto" loop></audio>
-            </div>
-            <div class="music-div">
-                <img src="assets/images/soft-boy.jpg" alt="soft boy" onclick="toggleAudio2()">
-                <audio id="soft-boy-audio" class="audios" src="assets/audio/soft-boy.mp3" preload="auto" loop></audio>
-            </div>
-            <div class="music-div">
-                <img src="assets/images/violet.jpg" alt="violet" onclick="toggleAudio3()">
-                <audio id="violet-audio" class="audios" src="assets/audio/violet.mp3" preload="auto" loop></audio>
-            </div>
-            <div class="music-div">
-                <img src="assets/images/sorting-algorithms.jpg" alt="sorting algorithms" onclick="toggleAudio4()">
-                <audio id="sorting-algorithms-audio" class="audios" src="assets/audio/sorting-algorithms.mp3" preload="auto" loop></audio>
-            </div>
-            <div class="music-div">
-                <img src="assets/images/little-dark-age.png" alt="little dark age" onclick="toggleAudio5()">
-                <audio id="little-dark-age-audio" class="audios" src="assets/audio/little-dark-age.mp3" preload="auto" loop></audio>
-            </div>
+    <audio id="audio" src="assets/audio/buttercup.mp3" preload="auto" autoplay></audio>
+    <div id="content">
+        <div id="carousel">
+            <div class="carousel-item"><img src="assets/images/buttercup.jpg" alt="buttercup" onclick="setAudio(0)"></div>
+            <div class="carousel-item"><img src="assets/images/soft-boy.jpg" alt="soft boy" onclick="setAudio(1)"></div>
+            <div class="carousel-item"><img src="assets/images/violet.jpg" alt="violet" onclick="setAudio(2)"></div>
+            <div class="carousel-item"><img src="assets/images/sorting-algorithms.jpg" alt="sorting algorithms" onclick="setAudio(3)"></div>
+            <div class="carousel-item"><img src="assets/images/little-dark-age.png" alt="little dark agse" onclick="setAudio(4)"></div>
         </div>
-        <div class="now-playing-box">
-            <div class="now-playing">
-                <span>Now Playing:</span>
-            </div>
+        <div id="buttons">
+            <button id="previous-button" onclick="previousAudio();">Previous</button>
+            <h2 id="now-playing">Buttercup - Jack Stauber</h2>
+            <button id="next-button" onclick="nextAudio();">Next</button>
         </div>
-        <div class="song-box">
-            <div class="song-list">
-                <div class="song-item" onclick="toggleAudio1()"><span>01. Buttercup - Jack Stauber</span><span>3:28</span></div>
-                <div class="song-item" onclick="toggleAudio2()"><span>02. Soft Boy - Wilbur Soot</span><span>2:48</span></div>
-                <div class="song-item" onclick="toggleAudio3()"><span>03. violet - vylt</span><span>5:42</span></div>
-                <div class="song-item" onclick="toggleAudio4()"><span>04. sorting algorithms. - AlphaGX</span><span>5:50</span></div>
-                <div class="song-item" onclick="toggleAudio5()"><span>05. Little Dark Age - MGMT</span><span>5:00</span></div>
-            </div>
+        <div id="song-list">
+            <div class="song-list-item" onclick="setAudio(0)"><span>01. Buttercup - Jack Stauber</span><span>3:28</span></div>
+            <div class="song-list-item" onclick="setAudio(1)"><span>02. Soft Boy - Wilbur Soot</span><span>2:48</span></div>
+            <div class="song-list-item" onclick="setAudio(2)"><span>03. violet - vylt</span><span>5:42</span></div>
+            <div class="song-list-item" onclick="setAudio(3)"><span>04. sorting algorithms. - AlphaGX</span><span>5:50</span></div>
+            <div class="song-list-item" onclick="setAudio(4)"><span>05. Little Dark Age - MGMT</span><span>5:00</span></div>
         </div>
     </div>
 </body>
