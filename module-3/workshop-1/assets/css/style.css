@@ -1,0 +1,54 @@
+.carousel {
+    position: relative;
+    height: 450px;
+    width: 80%;
+}
+
+.carousel-track-container {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-slide {
+    position: absolute;
+    height: 100%;
+}
+
+.carousel-slide img {
+    height: 100%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#buttons h2 {
+    width: 350px;
+    text-align: center;
+    color: blueviolet;
+}
+
+#buttons button {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
+
+#song-list {
+    margin: 0px auto;
+    width: 300px;
+}
+
+.song-list-item {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}

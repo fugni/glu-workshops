@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#television1 {
+    width: 599px;
+    border: 15px solid #404040;
+    border-radius: 20px;
+}
+
+#television2 {
+    height: 519px;
+    border: 40px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #808080, #303030);
+    border-top-width: 30px;
+    border-bottom-width: 60px;
+}
+
+#television2 video {
+    height: 500px;
+    width: 500px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top, #808080, #303030);
+    background-color: black;
+}
+
+#button {
+    float: right;
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: green;
+    border: 5px solid darkgreen;
+    border-radius: 50%;
+}
