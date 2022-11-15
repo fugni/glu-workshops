@@ -14,9 +14,24 @@ const audioNameArray = [
     "Little Dark Age - MGMT",
 ];
 
-var currentAudio = 0;
-var audio = document.getElementById("audio");
-var nowPlaying = document.getElementById("now-playing");
+let currentAudio = 0;
+const audio = document.getElementById("audio");
+const nowPlaying = document.getElementById("now-playing");
+
+const nextButton = document.querySelector(".next-button");
+const prevButton = document.querySelector(".previous-button");
+
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+console.log(slideWidth);
+
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + "px";
+}
+
+slides.forEach(setSlidePosition);
 
 function nextAudio() {
     currentAudio++;

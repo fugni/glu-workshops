@@ -1,16 +1,27 @@
-#carousel {
-    display: flex;
-    justify-content: center;
+.carousel {
+    position: relative;
+    height: 450px;
+    width: 80%;
 }
 
-.carousel-item img {
-    height: 250px;
-    width: 250px;
-    cursor: pointer;
+.carousel-track-container {
+    height: 100%;
+    position: relative;
 }
 
-.carousel-item img:active {
-    border: 5px solid black;
+.carousel-track {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel-slide {
+    position: absolute;
+    height: 100%;
+}
+
+.carousel-slide img {
+    height: 100%;
 }
 
 #buttons {
