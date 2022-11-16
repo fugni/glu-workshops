@@ -104,10 +104,12 @@ body {
 }
 
 #sidebar {
+    padding: 50px;
     float: left;
 }
 
 .sidebar-box {
+    max-width: 350px;
     margin: 20px;
     border: 2px solid #79addc;
     border-top: 10px solid #fe6700;
@@ -167,9 +169,8 @@ body {
     width: 90%;
     height: 6px;
     background-color: gray;
-    border: 4px solid #000000;
-    border-left: 0;
-    border-right: 0;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
 }
 
 #price-slider-tag {
@@ -190,21 +191,39 @@ body {
     height: 100px;
 }
 
+#recent-product-icon {
+    border: 3px solid #fe6700;
+    border-radius: 35%;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+}
+
+#recent-product-icon img {
+    margin: 10px;
+    height: 50px;
+}
+
 #products {
-    width: 70vw;
+    width: 70%;
     float: right;
+}
+
+#products-top p {
+    margin-left: 5px;
 }
 
 #products-top-top {
     display: flex;
     justify-content: space-between;
-    border-bottom: 5px solid #fe6700;
+    border-bottom: 5px solid #fe6700;    
     box-shadow: 0px 5px #79addc;
 }
 
 #products-top-top h2 {
     margin-left: 5px;
     margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 #products-top-top select {
