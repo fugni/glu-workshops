@@ -357,3 +357,20 @@ body {
 .very-bold {
     font-weight: 900;
 }
+
+#home-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home-content a {
+    padding-bottom: 40px;
+    font-family: "Rubik";
+    font-size: 50px;
+    color: #fe6700;
+    text-decoration: none;
+}
+
+#home-content a:hover {
+    font-weight: bold;
+}
