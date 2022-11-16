@@ -23,32 +23,54 @@ const prevButton = document.querySelector(".previous-button");
 
 const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);
+
+// sets slides next to eachother
 const slideWidth = slides[0].getBoundingClientRect().width;
-
 console.log(slideWidth);
-
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + "px";
 }
-
 slides.forEach(setSlidePosition);
 
-function nextAudio() {
+// change slide function
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = "translateX(-" + targetSlide.style.left + ")";
+    currentSlide.classList.remove("current-slide");
+    targetSlide.classList.add("current-slide");
+}
+
+// next audio
+nextButton.addEventListener("click", e => {
+    const currentSlide = track.querySelector(".current-slide");
+    const nextSlide = currentSlide.nextElementSibling;
+
+    moveToSlide(track, currentSlide, nextSlide)
+
     currentAudio++;
     if (currentAudio == 5) {
         currentAudio = 0;
     }
     audio.setAttribute("src", "assets/audio/" + audioSrcArray[currentAudio]);
     nowPlaying.textContent = audioNameArray[currentAudio];
-}
+});
 
-function previousAudio() {
+// previous audio
+prevButton.addEventListener("click", e => {
+    const currentSlide = track.querySelector(".current-slide");
+    const prevSlide = currentSlide.previousElementSibling;
+
+    moveToSlide(track, currentSlide, prevSlide)
+
     currentAudio--;
     if (currentAudio == -1) {
         currentAudio = 4;
     }
     audio.setAttribute("src", "assets/audio/" + audioSrcArray[currentAudio]);
     nowPlaying.textContent = audioNameArray[currentAudio];
+});
+
+function previousAudio() {
+
 }
 
 function setAudio(a) {
