@@ -50,14 +50,16 @@ body {
     margin: 20px;
 }
 
-#song-list {
-    margin: 0px auto;
-    width: 300px;
+.audio-list-div {
+    display: flex;
+    justify-content: center;
 }
 
-.song-list-item {
+.audio-list-item {
     margin: 10px;
-    display: flex;
-    justify-content: space-between;
     cursor: pointer;
+}
+
+.audio-list-length div {
+    margin: 10px;
 }
