@@ -1,36 +1,107 @@
-* {
-    font-size: 32px;
-    margin: 0;
-    padding: 0;
+body {
+    width: 500px;
+    margin: 4% auto;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
 }
 
-#container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.calculator {
+    padding: 20px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
 }
 
-#calculator {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    height: 320px;
-    background-color: #888888;
-    border: 1px solid #000;
+.input {
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
 }
 
-.row {
-    height: 20%;
+.input:hover {
+    border: 1px solid #bbbbbb;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-input[type="text"] {
-    height: 100%;
-    width: 95%;
+.operators div {
+    display: inline-block;
+    border: 1px solid #bbbbbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #dddddd;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s,
+        box-shadow 0.2s;
 }
 
-button {
-    height: 100%;
-    width: 23%;
+.operators div:hover {
+    background-color: #dddddd;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaaaaa;
+}
+
+.operators div:active {
+    font-weight: bold;
+}
+
+.numbers {
+    display: inline-block;
+}
+
+.number-row div {
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease-in-out, background-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.number-row div:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbbbbb;
+}
+
+.number-row div:active {
+    font-weight: bold;
+}
+
+div.result {
+    display: inline-block;
+    border: 1px solid #3079ed;
+    border-radius: 1px;
+    width: 17%;
+    text-align: center;
+    padding: 127px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #4d90fe;
+    transition: all 0.2s ease-in-out;
+}
+
+div.result:hover {
+    background-color: #307cf9;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857bb;
+}
+
+div.result:active {
+    font-weight: bold;
 }
