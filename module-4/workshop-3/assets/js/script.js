@@ -1,5 +1,3 @@
-"use strict";
-
 const input = document.getElementById('input'); // input/output button
 const number = document.querySelectorAll('.number-row div'); // number buttons
 const operator = document.querySelectorAll('.operators div'); // operator buttons
@@ -73,7 +71,6 @@ result.addEventListener("click", function() {
   console.log(inputString);
   console.log(operators);
   console.log(numbers);
-  console.log("----------------------------");
 
   // now we are looping through the array and doing one operation at a time.
   // first divide, then multiply, then subtraction and then addition
